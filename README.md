@@ -43,6 +43,8 @@ The starting dataset contain the useful features to the further analysis and I m
 Before the data modelling a decided a will use regression technics because, the target feature has high variance. I tried some of method from scikit-learn library, and the winner was the RandomForest method.
 Tune the hyper pararameter with GridSearchCV, and the error metric was mean absoulte error.
 
+![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+
 
 
 
