@@ -13,18 +13,6 @@ Approximately 600 000 used cars change owner for a year in Hungary. Most of peop
 The source of data has made from online secondhand car shop, which I gathered by python beautifulsoup extension. (The webscarp process does not contain the repository.) I scarped the most common cars like OPEL, RENAULT, SUZUKI, HONDA, MITSHUBISI etc.
 
 
-
-### Flowchart
-
-```mermaid
-graph TD
-A[01_Data_Cleaning] -->B[02_Data_Preprocessing]
-A --> C[03_Data_Desciption]
-B --> D[04_Data_Modelling]
-D --> E[05_Data_Evaulate]
-
-```
-
 Files | File Description
 ------------ | -------------
 01_Data_Cleaning.ipynb |Create unified data types, and filter rows
@@ -38,7 +26,7 @@ Files | File Description
 
 The starting dataset contain the useful features to the further analysis and I made some replace for clean this.
 
-## Data model
+## Data model - prediction
 
 Before the data modelling a decided a will use regression technics because, the target feature has high variance. I tried some of method from scikit-learn library, and the winner was the RandomForest method.
 Tune the hyper pararameter with GridSearchCV, and the error metric was mean absoulte error.
@@ -46,9 +34,7 @@ Tune the hyper pararameter with GridSearchCV, and the error metric was mean abso
 ![Train and Test set difference](https://github.com/Arthon83/Car-price-prediction/blob/master/png/estimate.png)
 ![Train and Test set difference](https://github.com/Arthon83/Car-price-prediction/blob/master/png/hist.png)
 
+## Conclusion
+In the evaluation has clear for me, the dataset is unbalaced, becouse has much more car from 10-16 age than other, and the features does not contain the cars exact status. The solution this problem, maybe gather more data from younger and older cars, make balace the dataset and the predicting will be more precise.
 
-
-
-
-
-
+You can see this project in production [here.](http://carpred.ml")
