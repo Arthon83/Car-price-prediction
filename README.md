@@ -4,7 +4,7 @@ This project was created as a reference project for my Machine Learning study.
 
 ## Problem Statement
 
-Approximately 600 000 used cars change owner for a year in Hungary. Most of people hard to define how much their car price. Sometimes looking for car same condition like their or ask some proffesional car dealer for this. 
+Approximately 600 000 used cars change owner for a year in Hungary. Most of people hard to define how much their car price. Sometimes looking for car in same condition or ask some professional car dealer. 
     In my project I try to find soulution with machine learning tools.
     
 
@@ -35,6 +35,6 @@ Tune the hyper pararameter with GridSearchCV, and the error metric was mean abso
 ![Train and Test set difference](https://github.com/Arthon83/Car-price-prediction/blob/master/png/hist.png)
 
 ## Conclusion
-In the evaluation has clear for me, the dataset is unbalaced, becouse has much more car from 10-16 age than other, and the features does not contain the cars exact status. The solution this problem, maybe gather more data from younger and older cars, make balace the dataset and the predicting will be more precise.
+The dataset is unbalaced, becouse has much more car from 10-16 age than other, and the features does not contain the cars exact status. The solution this problem, maybe gather more data from younger and older cars, to make it balace the dataset and the predicting will be more precise.
 
 You can see this project in production [here.](http://carpred.ml)
